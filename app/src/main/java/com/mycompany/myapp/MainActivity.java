@@ -14,7 +14,7 @@ public class MainActivity
 {
 
 
-	private static final String API_KEY = "AIzaSyCyuhx1gO7Qjyjmw4HrpnjXfsQWXqRD0E0";
+	private static final String API_KEY = "";
 	String youtubeID = "5xzWr1iYE2k";
 	private YouTubePlayerView player;
 	
