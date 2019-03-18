@@ -6,6 +6,7 @@ import com.google.android.youtube.player.*;
 import com.google.android.youtube.player.YouTubePlayer.*;
 import android.widget.*;
 import android.webkit.*;
+import android.view.*;
 
 public class MainActivity 
 	extends YouTubeBaseActivity 
@@ -13,8 +14,8 @@ public class MainActivity
 {
 
 
-	private static final String API_KEY = "AIzaSyAQiSG812szll8y_BNCSi22rHVf3bplK3M";
-	String youtubeID = "YR5ApYxkU-U";
+	private static final String API_KEY = "AIzaSyCyuhx1gO7Qjyjmw4HrpnjXfsQWXqRD0E0";
+	String youtubeID = "5xzWr1iYE2k";
 	private YouTubePlayerView player;
 	
 	WebView wv;
@@ -23,12 +24,7 @@ public class MainActivity
 	public void onInitializationSuccess(
 		YouTubePlayer.Provider provider, YouTubePlayer player, boolean loadAgain)
 	{
-		Toast.makeText(this,""+loadAgain, Toast.LENGTH_SHORT).show();
-		if(loadAgain == true){
-			player.cueVideo(youtubeID);
-			Toast.makeText(this, "onInitializationSuccess", Toast.LENGTH_SHORT).show();
-		}
-		
+		player.cueVideo(youtubeID);
 	}
 
 	@Override
@@ -36,7 +32,7 @@ public class MainActivity
 		YouTubePlayer.Provider provider, YouTubeInitializationResult youResult)
 	{
 		// toast para mostrar o erro na tela
-		Toast.makeText(this, "onInitializationFailure", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "onInitializatioanFailure", Toast.LENGTH_SHORT).show();
 	}
 	
 
@@ -50,18 +46,22 @@ public class MainActivity
 		player.initialize(API_KEY, this);
 		
 		
-		
+		/*
 		wv = (WebView)
 			findViewById(R.id.webV_id);
 		WebSettings webSettings = wv.getSettings();
 		webSettings.setJavaScriptEnabled(true);
 
-		String frameVideo = ("<iframe width=100% height='300' src='https://www.youtube.com/embed/YR5ApYxkU-U' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
-		wv.loadData(frameVideo, "text/html", "utf-8");
+		String frameVideo = ("<iframe width=100% height='300' src='https://www.youtube.com/embed/"+youtubeID+"' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+		wv.loadData(frameVideo, "text/html", "utf-8");*/
+		
+		
 		
     }
 	
 	
+	public void onClickBegin (View view){
+		
 	
-	
+	}
 }

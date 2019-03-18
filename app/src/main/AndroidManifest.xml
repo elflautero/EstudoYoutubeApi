@@ -21,16 +21,13 @@
 </manifest>
 
 <!-- 
-	
-MD5:
-E8:9B:15:8E:4B:CF:98:8E:BD:09:EB:83:F5:37:8E:87
-
+Default
 SHA1:
 61:ED:37:7E:85:D3:86:A8:DF:EE:6B:86:4B:D8:5B:0B:FA:A5:AF:81
 
-SHA1 Binary Base64:
-Ye03foXThqjf7muGS9hbC/qlr4E=
 
-não precisou usar sha1 - chave api AIzaSyAQiSG812szll8y_BNCSi22rHVf3bplK3M
+Customizado
+SHA1:
+ED:7B:2D:D5:5A:19:25:B7:B8:92:DA:D5:23:17:D2:8C:B9:A0:3B:4A
 
 	-->
